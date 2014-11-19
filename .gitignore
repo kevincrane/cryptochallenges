@@ -10,18 +10,9 @@ __pycache__/
 *.iml
 
 # Distribution / packaging
-.Python
-env/
+env
 build/
-develop-eggs/
-dist/
-downloads/
-eggs/
 lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
+
+# Who the fuck has ever wanted this file?
+.DS_Store
