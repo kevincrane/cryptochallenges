@@ -69,9 +69,3 @@ def frombase64(ctext):
             fourth = 0x00
         ptext += chr((third & 0x03) << 6 | fourth & 0x3f)
     return ptext
-
-
-def hex_str_to_base64(s):
-    """ Turn string of hex chars to string of Base64
-    """
-    return base64.b64encode(s.decode('hex'))

@@ -23,9 +23,9 @@ def challenge(num, name, challenges):
     def decorator(f):
         def wrapper(*args, **kwargs):
             print('')
-            print('---------------------' + '-' * len(name))
-            print(' Begin challenge %d: %s' % (num, name))
-            print('---------------------' + '-' * len(name))
+            print('---------------' + '-' * len(name))
+            print(' Challenge %d: %s' % (num, name))
+            print('---------------' + '-' * len(name))
             print('')
             f(*args, **kwargs)
         challenges[num] = (name, wrapper)
@@ -37,7 +37,7 @@ def expect(actual, expected):
     if actual != expected:
         print('Failed.')
         print('  Expected: %r' % expected)
-        print('  Actual: %r' % actual)
+        print('  Actual:   %r' % actual)
         return False
     print 'Success!'
     print '  Matched: %r' % actual
